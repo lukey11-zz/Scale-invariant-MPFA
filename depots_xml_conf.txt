@@ -1,0 +1,108 @@
+NestPosition_0="5.0,5.0"
+NestPosition_1="5.0,0.0"
+NestPosition_2="5.0,-5.0"
+NestPosition_3="0.0,5.0"
+NestPosition_4="0.0,0.0"
+NestPosition_5="0.0,-5.0"
+NestPosition_6="-5.0,5.0"
+NestPosition_7="-5.0,0.0"
+NestPosition_8="-5.0,-5.0"
+<distribute>
+<position max="5.5,5.5,  0.0" method="uniform" min="4.5, 4.5,0.0"/>
+<orientation mean="0, 0, 0" method="gaussian" std_dev="360, 0, 0"/>
+<entity max_trials="100" quantity="6">
+<foot-bot id="CPFA_0"><controller config="CPFA"/></foot-bot>
+</entity>
+</distribute>
+<distribute>
+<position max="5.5,0.5,  0.0" method="uniform" min="4.5, -0.5,0.0"/>
+<orientation mean="0, 0, 0" method="gaussian" std_dev="360, 0, 0"/>
+<entity max_trials="100" quantity="6">
+<foot-bot id="CPFA_1"><controller config="CPFA"/></foot-bot>
+</entity>
+</distribute>
+<distribute>
+<position max="5.5,-4.5,  0.0" method="uniform" min="4.5, -5.5,0.0"/>
+<orientation mean="0, 0, 0" method="gaussian" std_dev="360, 0, 0"/>
+<entity max_trials="100" quantity="6">
+<foot-bot id="CPFA_2"><controller config="CPFA"/></foot-bot>
+</entity>
+</distribute>
+<distribute>
+<position max="0.5,5.5,  0.0" method="uniform" min="-0.5, 4.5,0.0"/>
+<orientation mean="0, 0, 0" method="gaussian" std_dev="360, 0, 0"/>
+<entity max_trials="100" quantity="6">
+<foot-bot id="CPFA_3"><controller config="CPFA"/></foot-bot>
+</entity>
+</distribute>
+<distribute>
+<position max="0.5,0.5,  0.0" method="uniform" min="-0.5, -0.5,0.0"/>
+<orientation mean="0, 0, 0" method="gaussian" std_dev="360, 0, 0"/>
+<entity max_trials="100" quantity="6">
+<foot-bot id="CPFA_4"><controller config="CPFA"/></foot-bot>
+</entity>
+</distribute>
+<distribute>
+<position max="0.5,-4.5,  0.0" method="uniform" min="-0.5, -5.5,0.0"/>
+<orientation mean="0, 0, 0" method="gaussian" std_dev="360, 0, 0"/>
+<entity max_trials="100" quantity="6">
+<foot-bot id="CPFA_5"><controller config="CPFA"/></foot-bot>
+</entity>
+</distribute>
+<distribute>
+<position max="-4.5,5.5,  0.0" method="uniform" min="-5.5, 4.5,0.0"/>
+<orientation mean="0, 0, 0" method="gaussian" std_dev="360, 0, 0"/>
+<entity max_trials="100" quantity="6">
+<foot-bot id="CPFA_6"><controller config="CPFA"/></foot-bot>
+</entity>
+</distribute>
+<distribute>
+<position max="-4.5,0.5,  0.0" method="uniform" min="-5.5, -0.5,0.0"/>
+<orientation mean="0, 0, 0" method="gaussian" std_dev="360, 0, 0"/>
+<entity max_trials="100" quantity="6">
+<foot-bot id="CPFA_7"><controller config="CPFA"/></foot-bot>
+</entity>
+</distribute>
+<distribute>
+<position max="-4.5,-4.5,  0.0" method="uniform" min="-5.5, -5.5,0.0"/>
+<orientation mean="0, 0, 0" method="gaussian" std_dev="360, 0, 0"/>
+<entity max_trials="100" quantity="6">
+<foot-bot id="CPFA_8"><controller config="CPFA"/></foot-bot>
+</entity>
+</distribute>
+<cylinder id="cyl0" radius="0.15" height="0.1"
+             movable="false" mass="2.5">
+<body position="5.0, 5.0, 0" orientation="45,0,0" /> 
+</cylinder>
+<cylinder id="cyl1" radius="0.15" height="0.1"
+             movable="false" mass="2.5">
+<body position="5.0, 0.0, 0" orientation="45,0,0" /> 
+</cylinder>
+<cylinder id="cyl2" radius="0.15" height="0.1"
+             movable="false" mass="2.5">
+<body position="5.0, -5.0, 0" orientation="45,0,0" /> 
+</cylinder>
+<cylinder id="cyl3" radius="0.15" height="0.1"
+             movable="false" mass="2.5">
+<body position="0.0, 5.0, 0" orientation="45,0,0" /> 
+</cylinder>
+<cylinder id="cyl4" radius="0.15" height="0.1"
+             movable="false" mass="2.5">
+<body position="0.0, 0.0, 0" orientation="45,0,0" /> 
+</cylinder>
+<cylinder id="cyl5" radius="0.15" height="0.1"
+             movable="false" mass="2.5">
+<body position="0.0, -5.0, 0" orientation="45,0,0" /> 
+</cylinder>
+<cylinder id="cyl6" radius="0.15" height="0.1"
+             movable="false" mass="2.5">
+<body position="-5.0, 5.0, 0" orientation="45,0,0" /> 
+</cylinder>
+<cylinder id="cyl7" radius="0.15" height="0.1"
+             movable="false" mass="2.5">
+<body position="-5.0, 0.0, 0" orientation="45,0,0" /> 
+</cylinder>
+<cylinder id="cyl8" radius="0.15" height="0.1"
+             movable="false" mass="2.5">
+<body position="-5.0, -5.0, 0" orientation="45,0,0" /> 
+</cylinder>

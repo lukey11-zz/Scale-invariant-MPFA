@@ -1,0 +1,30 @@
+Forage: 118, 128, 108
+Forage: 109, 137, 105
+Forage: 114, 134, 105
+Forage: 112, 135, 104
+Forage: 117, 138
+Forage: 119, 133
+Forage: 118, 140
+Forage: 121, 135, 94
+Forage: 115, 135, 100
+Forage: 122, 130, 102
+Forage: 121, 123, 109
+Forage: 119, 143
+Forage: 122, 133, 103
+Forage: 118, 135, 95
+Forage: 121, 132, 99
+Forage: 113, 130
+Forage: 114, 123, 102
+Forage: 121, 138
+Forage: 119, 127, 106
+Forage: 126, 123, 94
+Forage: 122, 138
+Forage: 125, 112, 109
+Forage: 123, 130, 102
+Forage: 122, 136, 97
+Forage: 113, 135, 100
+Forage: 125, 129
+Forage: 118, 131, 108
+Forage: 123, 126, 100
+Forage: 123, 134
+Forage: 120, 142

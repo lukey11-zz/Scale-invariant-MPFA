@@ -1,0 +1,30 @@
+Forage: 191
+Forage: 186
+Forage: 171, 183
+Forage: 181
+Forage: 184
+Forage: 186
+Forage: 185
+Forage: 191
+Forage: 185, 171
+Forage: 197
+Forage: 184, 171
+Forage: 183
+Forage: 176
+Forage: 203
+Forage: 189
+Forage: 183
+Forage: 191
+Forage: 180, 176
+Forage: 192
+Forage: 183
+Forage: 189
+Forage: 184, 172
+Forage: 180
+Forage: 185
+Forage: 194
+Forage: 185, 171
+Forage: 191
+Forage: 181, 175
+Forage: 196
+Forage: 186

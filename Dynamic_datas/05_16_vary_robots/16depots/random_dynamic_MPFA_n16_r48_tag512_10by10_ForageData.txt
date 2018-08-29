@@ -1,0 +1,30 @@
+Forage: 100, 103, 91
+Forage: 92, 111, 84
+Forage: 90, 106, 90, 70
+Forage: 91, 112, 76, 75
+Forage: 95, 111, 84
+Forage: 93, 112, 91
+Forage: 90, 112, 94
+Forage: 96, 109, 89
+Forage: 101, 106, 94
+Forage: 91, 120, 87
+Forage: 96, 101, 91
+Forage: 93, 114, 95
+Forage: 93, 106, 99
+Forage: 100, 108, 87
+Forage: 93, 111, 86
+Forage: 97, 104, 96
+Forage: 97, 112, 89
+Forage: 90, 109, 82, 77
+Forage: 97, 112, 90
+Forage: 99, 107, 86
+Forage: 97, 106, 101
+Forage: 101, 112, 89
+Forage: 90, 110, 92
+Forage: 102, 106, 94
+Forage: 100, 104, 85
+Forage: 96, 106, 95
+Forage: 93, 112, 90
+Forage: 92, 105, 95
+Forage: 98, 112, 91
+Forage: 100, 105, 95
