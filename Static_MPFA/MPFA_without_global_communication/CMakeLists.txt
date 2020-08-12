@@ -84,6 +84,7 @@ add_executable(cpfa_evolver source/evolver.cpp)
 
 # Specify the libraries needed to compile the evolver.
 target_link_libraries(cpfa_evolver CPFA_controller
+                                   footbot_diffusion
 				   CPFA_loop_functions
 				   GA-MPI   
 				   ${MPI_LIBRARIES}

@@ -46,10 +46,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication
+CMAKE_SOURCE_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build
+CMAKE_BINARY_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build
 
 # Include any dependencies generated for this target.
 include source/Base/CMakeFiles/BaseController.dir/depend.make
@@ -62,16 +62,16 @@ include source/Base/CMakeFiles/BaseController.dir/flags.make
 
 source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o: source/Base/CMakeFiles/BaseController.dir/flags.make
 source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o: ../source/Base/BaseController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o"
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/Base && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BaseController.dir/BaseController.cpp.o -c /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/source/Base/BaseController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o"
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/Base && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BaseController.dir/BaseController.cpp.o -c /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/source/Base/BaseController.cpp
 
 source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BaseController.dir/BaseController.cpp.i"
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/source/Base/BaseController.cpp > CMakeFiles/BaseController.dir/BaseController.cpp.i
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/source/Base/BaseController.cpp > CMakeFiles/BaseController.dir/BaseController.cpp.i
 
 source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseController.dir/BaseController.cpp.s"
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/source/Base/BaseController.cpp -o CMakeFiles/BaseController.dir/BaseController.cpp.s
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/source/Base/BaseController.cpp -o CMakeFiles/BaseController.dir/BaseController.cpp.s
 
 source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o.requires:
 
@@ -84,18 +84,44 @@ source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o.provides: source/
 source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o.provides.build: source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o
 
 
+source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o: source/Base/CMakeFiles/BaseController.dir/flags.make
+source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o: source/Base/BaseController_automoc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o"
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/Base && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o -c /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/Base/BaseController_automoc.cpp
+
+source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BaseController.dir/BaseController_automoc.cpp.i"
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/Base/BaseController_automoc.cpp > CMakeFiles/BaseController.dir/BaseController_automoc.cpp.i
+
+source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseController.dir/BaseController_automoc.cpp.s"
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/Base/BaseController_automoc.cpp -o CMakeFiles/BaseController.dir/BaseController_automoc.cpp.s
+
+source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o.requires:
+
+.PHONY : source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o.requires
+
+source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o.provides: source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o.requires
+	$(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o.provides.build
+.PHONY : source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o.provides
+
+source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o.provides.build: source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o
+
+
 # Object files for target BaseController
 BaseController_OBJECTS = \
-"CMakeFiles/BaseController.dir/BaseController.cpp.o"
+"CMakeFiles/BaseController.dir/BaseController.cpp.o" \
+"CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o"
 
 # External object files for target BaseController
 BaseController_EXTERNAL_OBJECTS =
 
 source/Base/libBaseController.so: source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o
+source/Base/libBaseController.so: source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o
 source/Base/libBaseController.so: source/Base/CMakeFiles/BaseController.dir/build.make
 source/Base/libBaseController.so: source/Base/CMakeFiles/BaseController.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libBaseController.so"
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/Base && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BaseController.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libBaseController.so"
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/Base && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BaseController.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 source/Base/CMakeFiles/BaseController.dir/build: source/Base/libBaseController.so
@@ -103,14 +129,15 @@ source/Base/CMakeFiles/BaseController.dir/build: source/Base/libBaseController.s
 .PHONY : source/Base/CMakeFiles/BaseController.dir/build
 
 source/Base/CMakeFiles/BaseController.dir/requires: source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o.requires
+source/Base/CMakeFiles/BaseController.dir/requires: source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o.requires
 
 .PHONY : source/Base/CMakeFiles/BaseController.dir/requires
 
 source/Base/CMakeFiles/BaseController.dir/clean:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/Base && $(CMAKE_COMMAND) -P CMakeFiles/BaseController.dir/cmake_clean.cmake
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/Base && $(CMAKE_COMMAND) -P CMakeFiles/BaseController.dir/cmake_clean.cmake
 .PHONY : source/Base/CMakeFiles/BaseController.dir/clean
 
 source/Base/CMakeFiles/BaseController.dir/depend:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/source/Base /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/Base /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/Base/CMakeFiles/BaseController.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/source/Base /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/Base /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/Base/CMakeFiles/BaseController.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : source/Base/CMakeFiles/BaseController.dir/depend
 

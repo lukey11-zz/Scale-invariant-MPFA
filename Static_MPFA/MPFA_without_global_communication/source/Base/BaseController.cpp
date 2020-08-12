@@ -34,6 +34,9 @@ BaseController::BaseController() :
 	argos::Real rangeY = (ArenaSize.GetY() / 2.0) - 0.085;
 	ForageRangeX.Set(-rangeX, rangeX);
 	ForageRangeY.Set(-rangeY, rangeY);
+	RegionRangeX.Set(-2.5+0.085, 2.5-0.085);
+	RegionRangeY.Set(-2.5+0.085, 2.5-0.085);
+	
 	GoStraightAngleRangeInDegrees.Set(-37.5, 37.5);
 }
 
@@ -174,20 +177,22 @@ void BaseController::SetNextMovement() {
 
 		if(!IsAtTarget()) {
 			if(headingToTargetError > AngleTol) {
-				//cout << "Turn Left " << endl;
+				cout << "SetNextMovement, Turn Left " << endl;
 				PushMovement(LEFT, -ToDegrees(headingToTargetError).GetValue());
 			} else if(headingToTargetError < -AngleTol) {
-				//cout << "Turn Right " << endl;
+				cout << "SetNextMovement, Turn Right " << endl;
 				PushMovement(RIGHT, ToDegrees(headingToTargetError).GetValue());
 			} else {
-				//cout << "Move Forward " << endl;
+				cout << "SetNextMovement, Move Forward " << endl;
 				PushMovement(FORWARD, distanceToTarget);
 			}
 		} else {
 			PushMovement(STOP, 0.0);
+			cout << "SetNextMovement, stop " << endl;
 		}
 	} else {
 		PopMovement();
+		cout << "SetNextMovement, pop " << endl;
 	}
 }
 
@@ -198,24 +203,28 @@ void BaseController::SetTargetAngleDistance(argos::Real newAngleToTurnInDegrees)
 	
 	argos::Real s = 0.105 * newAngleToTurnInDegrees;
  TicksToWaitWhileMoving = std::ceil((SimulationTicksPerSecond() * s) / RobotRotationSpeed);
+ argos::LOG<<"Angle dist: TicksToWaitWhileMoving="<<TicksToWaitWhileMoving<<endl;
 }
 
 void BaseController::SetTargetTravelDistance(argos::Real newTargetDistance) {
 	// convert meters into cm
 	argos::Real d = newTargetDistance * 100.0;
 	TicksToWaitWhileMoving = std::ceil((SimulationTicksPerSecond() * d) / RobotForwardSpeed);
+	argos::LOG<<"Target dist: TicksToWaitWhileMoving="<<TicksToWaitWhileMoving<<endl;
 }
 
 void BaseController::SetLeftTurn(argos::Real newAngleToTurnInDegrees) {
 	if(newAngleToTurnInDegrees > 0.0) {
 		SetTargetAngleDistance(newAngleToTurnInDegrees);
 		CurrentMovementState = LEFT;
+		argos::LOG << "CurrentMovementState = LEFT" << std::endl;
 	} else if(newAngleToTurnInDegrees < 0.0) {
 		SetTargetAngleDistance(-newAngleToTurnInDegrees);
 		CurrentMovementState = RIGHT;  
 	} else {
 		Stop();
 	}
+	argos::LOG << "in set left: CurrentMovementState="<< CurrentMovementState << std::endl;
 }
 
 void BaseController::SetRightTurn(argos::Real newAngleToTurnInDegrees) {
@@ -228,6 +237,7 @@ void BaseController::SetRightTurn(argos::Real newAngleToTurnInDegrees) {
 	} else {
 		Stop();
 	}
+	argos::LOG << "in set right: CurrentMovementState="<< CurrentMovementState << std::endl;
 }
 
 void BaseController::SetMoveForward(argos::Real newTargetDistance) {
@@ -304,7 +314,13 @@ unsigned int BaseController::GetCollisionTime(){
 bool BaseController::CollisionDetection() {
 
 	argos::CVector2 collisionVector = GetCollisionVector();
+	LOG<<"collisionVector="<<collisionVector<<endl;
+	
 	argos::Real collisionAngle = ToDegrees(collisionVector.Angle()).GetValue();
+	LOG<<"get value="<<collisionAngle<<endl;
+	
+	LOG<<"range?="<<GoStraightAngleRangeInDegrees.WithinMinBoundIncludedMaxBoundIncluded(collisionAngle)<<endl;
+LOG<<"vector length="<<collisionVector.Length()<<endl;
 	bool isCollisionDetected = false;
         
 	if(GoStraightAngleRangeInDegrees.WithinMinBoundIncludedMaxBoundIncluded(collisionAngle)
@@ -313,12 +329,12 @@ bool BaseController::CollisionDetection() {
 		Stop();
 		 isCollisionDetected = true;
 		 collision_counter++;
-                 //LOG<<"Collision..."<<endl;
+		 LOG<<"collision_counter="<<collision_counter<<endl;
    
 		while(MovementStack.size() > 0) MovementStack.pop();
 
 		PushMovement(FORWARD, SearchStepSize);
-
+        argos::LOG << "collisionAngle=" << collisionAngle << std::endl;
 		if(collisionAngle <= 0.0)  {
 			//argos::LOG << collisionAngle << std::endl << collisionVector << std::endl << std::endl;
 			SetLeftTurn(collisionAngle); //qilu 09/24/2016
@@ -326,8 +342,9 @@ bool BaseController::CollisionDetection() {
 			//argos::LOG << collisionAngle << std::endl << collisionVector << std::endl << std::endl;
 			SetRightTurn(collisionAngle); //qilu 09/24/2016
 		}
-		Real randomNumber = RNG->Uniform(CRange<Real>(0.0, 1.0));
+		Real randomNumber = RNG->Uniform(CRange<Real>(0.5, 1.0));
         collisionDelay = SimulationTick() + (size_t)(randomNumber*SimulationTicksPerSecond());//qilu 10/26/2016
+	LOG<<"collisionDelay="<<collisionDelay<<endl;
 	}
 
 	return isCollisionDetected;
@@ -341,9 +358,10 @@ argos::CVector2 BaseController::GetCollisionVector() {
 	argos::CVector2 collisionVector;
 
 	for(size_t i = 0; i < proximityReadings.size(); ++i) {
+		argos::LOG<<"get angle="<<argos::CVector2(proximityReadings[i].Value, proximityReadings[i].Angle)<<endl;
 		collisionVector += argos::CVector2(proximityReadings[i].Value, proximityReadings[i].Angle);
 	}
-
+       
 	collisionVector /= proximityReadings.size();
 
 	return collisionVector;
@@ -362,13 +380,15 @@ void BaseController::Move() {
 
 	collisionFlag = CollisionDetection();
  //double randomNumber = RNG->Uniform(argos::CRange<double>(0.0, 1.0));//qilu 09/24/2016
- 
+        argos::LOG << "collisionFlag="<<collisionFlag<<std::endl;
+        argos::LOG << "CurrentMovementState="<<CurrentMovementState<<std::endl;
+        argos::LOG <<"SimulationTick()="<<SimulationTick()<<std::endl;
 	/* move based on the movement state flag */
 	switch(CurrentMovementState) {
 
 		/* stop movement */
 		case STOP: {
-			//argos::LOG << "STOP\n";
+			argos::LOG << "STOP\n";
 			wheelActuator->SetLinearVelocity(0.0, 0.0);
 			SetNextMovement();
 			break;
@@ -378,12 +398,13 @@ void BaseController::Move() {
 		case LEFT: {
 			if((TicksToWaitWhileMoving--) <= 0.0) {
 				Stop();
+				argos::LOG << "LEFT -> stop\n";
 			/*} else {
 				//argos::LOG << "LEFT\n";
 				wheelActuator->SetLinearVelocity(-RobotRotationSpeed, RobotRotationSpeed);
 			}*/
 			 }else if(collisionDelay< SimulationTick() || collisionFlag){
-				//argos::LOG << "LEFT\n";
+				argos::LOG << "LEFT\n";
 				wheelActuator->SetLinearVelocity(-RobotRotationSpeed, RobotRotationSpeed);
 			}
 		    else wheelActuator->SetLinearVelocity(RobotForwardSpeed, RobotForwardSpeed);  //qilu 10/26/2016 
@@ -394,12 +415,13 @@ void BaseController::Move() {
 		case RIGHT: {
 			if((TicksToWaitWhileMoving--) <= 0.0) {
 				Stop();
+				argos::LOG << "RIGHT->stop\n";
 			/*} else {
 				//argos::LOG << "RIGHT\n";
 				wheelActuator->SetLinearVelocity(RobotRotationSpeed, -RobotRotationSpeed);
 			}*/
 			} else if(collisionDelay< SimulationTick()|| collisionFlag){
-				//argos::LOG << "RIGHT\n";
+				argos::LOG << "RIGHT\n";
 				wheelActuator->SetLinearVelocity(RobotRotationSpeed, -RobotRotationSpeed);
 			}
             else wheelActuator->SetLinearVelocity(RobotForwardSpeed, RobotForwardSpeed);  //qilu 10/26/2016  
@@ -410,8 +432,9 @@ void BaseController::Move() {
 		case FORWARD: {
 			if((TicksToWaitWhileMoving--) <= 0.0) {
 				Stop();
+				argos::LOG << "Forward -> stop\n";
 			} else {
-			//argos::LOG << "FORWARD\n";
+			argos::LOG << "FORWARD\n";
 				wheelActuator->SetLinearVelocity(RobotForwardSpeed, RobotForwardSpeed);             
 			}
 			break;
@@ -421,8 +444,9 @@ void BaseController::Move() {
 		case BACK: {
 			if((TicksToWaitWhileMoving--) <= 0.0) {
 				Stop();
+				argos::LOG << "Back -> stop\n";
 			} else {
-			//argos::LOG << "BACK\n";
+			argos::LOG << "BACK\n";
 				wheelActuator->SetLinearVelocity(-RobotForwardSpeed, -RobotForwardSpeed);
 			}
 			break;

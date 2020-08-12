@@ -1,4 +1,4 @@
-# Install script for directory: /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/source/MPFA
+# Install script for directory: /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/source/MPFA
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

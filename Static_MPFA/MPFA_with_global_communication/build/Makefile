@@ -51,10 +51,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication
+CMAKE_SOURCE_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build
+CMAKE_BINARY_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,9 +83,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/CMakeFiles /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/CMakeFiles /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,6 +153,45 @@ Nest/fast:
 .PHONY : Nest/fast
 
 #=============================================================================
+# Target rules for targets named BaseController_automoc
+
+# Build rule for target.
+BaseController_automoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BaseController_automoc
+.PHONY : BaseController_automoc
+
+# fast build rule for target.
+BaseController_automoc/fast:
+	$(MAKE) -f source/Base/CMakeFiles/BaseController_automoc.dir/build.make source/Base/CMakeFiles/BaseController_automoc.dir/build
+.PHONY : BaseController_automoc/fast
+
+#=============================================================================
+# Target rules for targets named Pheromone_automoc
+
+# Build rule for target.
+Pheromone_automoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Pheromone_automoc
+.PHONY : Pheromone_automoc
+
+# fast build rule for target.
+Pheromone_automoc/fast:
+	$(MAKE) -f source/Base/CMakeFiles/Pheromone_automoc.dir/build.make source/Base/CMakeFiles/Pheromone_automoc.dir/build
+.PHONY : Pheromone_automoc/fast
+
+#=============================================================================
+# Target rules for targets named Nest_automoc
+
+# Build rule for target.
+Nest_automoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Nest_automoc
+.PHONY : Nest_automoc
+
+# fast build rule for target.
+Nest_automoc/fast:
+	$(MAKE) -f source/Base/CMakeFiles/Nest_automoc.dir/build.make source/Base/CMakeFiles/Nest_automoc.dir/build
+.PHONY : Nest_automoc/fast
+
+#=============================================================================
 # Target rules for targets named MPFA_controller
 
 # Build rule for target.
@@ -178,6 +217,32 @@ MPFA_loop_functions/fast:
 	$(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build
 .PHONY : MPFA_loop_functions/fast
 
+#=============================================================================
+# Target rules for targets named MPFA_controller_automoc
+
+# Build rule for target.
+MPFA_controller_automoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MPFA_controller_automoc
+.PHONY : MPFA_controller_automoc
+
+# fast build rule for target.
+MPFA_controller_automoc/fast:
+	$(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller_automoc.dir/build.make source/MPFA/CMakeFiles/MPFA_controller_automoc.dir/build
+.PHONY : MPFA_controller_automoc/fast
+
+#=============================================================================
+# Target rules for targets named MPFA_loop_functions_automoc
+
+# Build rule for target.
+MPFA_loop_functions_automoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MPFA_loop_functions_automoc
+.PHONY : MPFA_loop_functions_automoc
+
+# fast build rule for target.
+MPFA_loop_functions_automoc/fast:
+	$(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions_automoc.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions_automoc.dir/build
+.PHONY : MPFA_loop_functions_automoc/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,8 +254,13 @@ help:
 	@echo "... BaseController"
 	@echo "... Pheromone"
 	@echo "... Nest"
+	@echo "... BaseController_automoc"
+	@echo "... Pheromone_automoc"
+	@echo "... Nest_automoc"
 	@echo "... MPFA_controller"
 	@echo "... MPFA_loop_functions"
+	@echo "... MPFA_controller_automoc"
+	@echo "... MPFA_loop_functions_automoc"
 .PHONY : help
 
 

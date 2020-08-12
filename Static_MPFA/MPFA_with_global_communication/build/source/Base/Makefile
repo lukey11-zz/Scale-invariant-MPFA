@@ -51,10 +51,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication
+CMAKE_SOURCE_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build
+CMAKE_BINARY_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +83,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/CMakeFiles /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/Base/CMakeFiles/progress.marks
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/CMakeFiles 0
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/CMakeFiles /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/Base/CMakeFiles/progress.marks
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/clean
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +100,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/preinstall
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/preinstall
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 source/Base/CMakeFiles/BaseController.dir/rule:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/BaseController.dir/rule
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/BaseController.dir/rule
 .PHONY : source/Base/CMakeFiles/BaseController.dir/rule
 
 # Convenience name for target.
@@ -125,12 +125,12 @@ BaseController: source/Base/CMakeFiles/BaseController.dir/rule
 
 # fast build rule for target.
 BaseController/fast:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/build
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/build
 .PHONY : BaseController/fast
 
 # Convenience name for target.
 source/Base/CMakeFiles/Pheromone.dir/rule:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/Pheromone.dir/rule
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/Pheromone.dir/rule
 .PHONY : source/Base/CMakeFiles/Pheromone.dir/rule
 
 # Convenience name for target.
@@ -140,12 +140,12 @@ Pheromone: source/Base/CMakeFiles/Pheromone.dir/rule
 
 # fast build rule for target.
 Pheromone/fast:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/build
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/build
 .PHONY : Pheromone/fast
 
 # Convenience name for target.
 source/Base/CMakeFiles/Nest.dir/rule:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/Nest.dir/rule
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/Nest.dir/rule
 .PHONY : source/Base/CMakeFiles/Nest.dir/rule
 
 # Convenience name for target.
@@ -155,8 +155,53 @@ Nest: source/Base/CMakeFiles/Nest.dir/rule
 
 # fast build rule for target.
 Nest/fast:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Nest.dir/build.make source/Base/CMakeFiles/Nest.dir/build
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Nest.dir/build.make source/Base/CMakeFiles/Nest.dir/build
 .PHONY : Nest/fast
+
+# Convenience name for target.
+source/Base/CMakeFiles/BaseController_automoc.dir/rule:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/BaseController_automoc.dir/rule
+.PHONY : source/Base/CMakeFiles/BaseController_automoc.dir/rule
+
+# Convenience name for target.
+BaseController_automoc: source/Base/CMakeFiles/BaseController_automoc.dir/rule
+
+.PHONY : BaseController_automoc
+
+# fast build rule for target.
+BaseController_automoc/fast:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/BaseController_automoc.dir/build.make source/Base/CMakeFiles/BaseController_automoc.dir/build
+.PHONY : BaseController_automoc/fast
+
+# Convenience name for target.
+source/Base/CMakeFiles/Pheromone_automoc.dir/rule:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/Pheromone_automoc.dir/rule
+.PHONY : source/Base/CMakeFiles/Pheromone_automoc.dir/rule
+
+# Convenience name for target.
+Pheromone_automoc: source/Base/CMakeFiles/Pheromone_automoc.dir/rule
+
+.PHONY : Pheromone_automoc
+
+# fast build rule for target.
+Pheromone_automoc/fast:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone_automoc.dir/build.make source/Base/CMakeFiles/Pheromone_automoc.dir/build
+.PHONY : Pheromone_automoc/fast
+
+# Convenience name for target.
+source/Base/CMakeFiles/Nest_automoc.dir/rule:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/Nest_automoc.dir/rule
+.PHONY : source/Base/CMakeFiles/Nest_automoc.dir/rule
+
+# Convenience name for target.
+Nest_automoc: source/Base/CMakeFiles/Nest_automoc.dir/rule
+
+.PHONY : Nest_automoc
+
+# fast build rule for target.
+Nest_automoc/fast:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Nest_automoc.dir/build.make source/Base/CMakeFiles/Nest_automoc.dir/build
+.PHONY : Nest_automoc/fast
 
 BaseController.o: BaseController.cpp.o
 
@@ -164,7 +209,7 @@ BaseController.o: BaseController.cpp.o
 
 # target to build an object file
 BaseController.cpp.o:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o
 .PHONY : BaseController.cpp.o
 
 BaseController.i: BaseController.cpp.i
@@ -173,7 +218,7 @@ BaseController.i: BaseController.cpp.i
 
 # target to preprocess a source file
 BaseController.cpp.i:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.i
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.i
 .PHONY : BaseController.cpp.i
 
 BaseController.s: BaseController.cpp.s
@@ -182,8 +227,35 @@ BaseController.s: BaseController.cpp.s
 
 # target to generate assembly for a file
 BaseController.cpp.s:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.s
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.s
 .PHONY : BaseController.cpp.s
+
+BaseController_automoc.o: BaseController_automoc.cpp.o
+
+.PHONY : BaseController_automoc.o
+
+# target to build an object file
+BaseController_automoc.cpp.o:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.o
+.PHONY : BaseController_automoc.cpp.o
+
+BaseController_automoc.i: BaseController_automoc.cpp.i
+
+.PHONY : BaseController_automoc.i
+
+# target to preprocess a source file
+BaseController_automoc.cpp.i:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.i
+.PHONY : BaseController_automoc.cpp.i
+
+BaseController_automoc.s: BaseController_automoc.cpp.s
+
+.PHONY : BaseController_automoc.s
+
+# target to generate assembly for a file
+BaseController_automoc.cpp.s:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController_automoc.cpp.s
+.PHONY : BaseController_automoc.cpp.s
 
 Nest.o: Nest.cpp.o
 
@@ -191,7 +263,7 @@ Nest.o: Nest.cpp.o
 
 # target to build an object file
 Nest.cpp.o:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Nest.dir/build.make source/Base/CMakeFiles/Nest.dir/Nest.cpp.o
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Nest.dir/build.make source/Base/CMakeFiles/Nest.dir/Nest.cpp.o
 .PHONY : Nest.cpp.o
 
 Nest.i: Nest.cpp.i
@@ -200,7 +272,7 @@ Nest.i: Nest.cpp.i
 
 # target to preprocess a source file
 Nest.cpp.i:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Nest.dir/build.make source/Base/CMakeFiles/Nest.dir/Nest.cpp.i
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Nest.dir/build.make source/Base/CMakeFiles/Nest.dir/Nest.cpp.i
 .PHONY : Nest.cpp.i
 
 Nest.s: Nest.cpp.s
@@ -209,8 +281,35 @@ Nest.s: Nest.cpp.s
 
 # target to generate assembly for a file
 Nest.cpp.s:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Nest.dir/build.make source/Base/CMakeFiles/Nest.dir/Nest.cpp.s
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Nest.dir/build.make source/Base/CMakeFiles/Nest.dir/Nest.cpp.s
 .PHONY : Nest.cpp.s
+
+Nest_automoc.o: Nest_automoc.cpp.o
+
+.PHONY : Nest_automoc.o
+
+# target to build an object file
+Nest_automoc.cpp.o:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Nest.dir/build.make source/Base/CMakeFiles/Nest.dir/Nest_automoc.cpp.o
+.PHONY : Nest_automoc.cpp.o
+
+Nest_automoc.i: Nest_automoc.cpp.i
+
+.PHONY : Nest_automoc.i
+
+# target to preprocess a source file
+Nest_automoc.cpp.i:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Nest.dir/build.make source/Base/CMakeFiles/Nest.dir/Nest_automoc.cpp.i
+.PHONY : Nest_automoc.cpp.i
+
+Nest_automoc.s: Nest_automoc.cpp.s
+
+.PHONY : Nest_automoc.s
+
+# target to generate assembly for a file
+Nest_automoc.cpp.s:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Nest.dir/build.make source/Base/CMakeFiles/Nest.dir/Nest_automoc.cpp.s
+.PHONY : Nest_automoc.cpp.s
 
 Pheromone.o: Pheromone.cpp.o
 
@@ -218,7 +317,7 @@ Pheromone.o: Pheromone.cpp.o
 
 # target to build an object file
 Pheromone.cpp.o:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone.cpp.o
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone.cpp.o
 .PHONY : Pheromone.cpp.o
 
 Pheromone.i: Pheromone.cpp.i
@@ -227,7 +326,7 @@ Pheromone.i: Pheromone.cpp.i
 
 # target to preprocess a source file
 Pheromone.cpp.i:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone.cpp.i
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone.cpp.i
 .PHONY : Pheromone.cpp.i
 
 Pheromone.s: Pheromone.cpp.s
@@ -236,8 +335,35 @@ Pheromone.s: Pheromone.cpp.s
 
 # target to generate assembly for a file
 Pheromone.cpp.s:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone.cpp.s
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone.cpp.s
 .PHONY : Pheromone.cpp.s
+
+Pheromone_automoc.o: Pheromone_automoc.cpp.o
+
+.PHONY : Pheromone_automoc.o
+
+# target to build an object file
+Pheromone_automoc.cpp.o:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone_automoc.cpp.o
+.PHONY : Pheromone_automoc.cpp.o
+
+Pheromone_automoc.i: Pheromone_automoc.cpp.i
+
+.PHONY : Pheromone_automoc.i
+
+# target to preprocess a source file
+Pheromone_automoc.cpp.i:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone_automoc.cpp.i
+.PHONY : Pheromone_automoc.cpp.i
+
+Pheromone_automoc.s: Pheromone_automoc.cpp.s
+
+.PHONY : Pheromone_automoc.s
+
+# target to generate assembly for a file
+Pheromone_automoc.cpp.s:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone_automoc.cpp.s
+.PHONY : Pheromone_automoc.cpp.s
 
 # Help Target
 help:
@@ -250,15 +376,27 @@ help:
 	@echo "... Pheromone"
 	@echo "... Nest"
 	@echo "... rebuild_cache"
+	@echo "... BaseController_automoc"
+	@echo "... Pheromone_automoc"
+	@echo "... Nest_automoc"
 	@echo "... BaseController.o"
 	@echo "... BaseController.i"
 	@echo "... BaseController.s"
+	@echo "... BaseController_automoc.o"
+	@echo "... BaseController_automoc.i"
+	@echo "... BaseController_automoc.s"
 	@echo "... Nest.o"
 	@echo "... Nest.i"
 	@echo "... Nest.s"
+	@echo "... Nest_automoc.o"
+	@echo "... Nest_automoc.i"
+	@echo "... Nest_automoc.s"
 	@echo "... Pheromone.o"
 	@echo "... Pheromone.i"
 	@echo "... Pheromone.s"
+	@echo "... Pheromone_automoc.o"
+	@echo "... Pheromone_automoc.i"
+	@echo "... Pheromone_automoc.s"
 .PHONY : help
 
 
@@ -270,6 +408,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

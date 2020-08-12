@@ -26,17 +26,24 @@ class Nest {
         size_t num_collected_tags;
         CVector2 NewLocation;
         size_t visited_time_point_in_minute;
+        int travel_flag;
         /* constructor function */
 		
 		      /* public helper functions */
         CVector2		GetLocation();
+        CVector2     GetDepartLocation();
         void		SetLocation();
+        void		SetDepartLocation(CVector2 location);
         void		SetLocation(CVector2 newLocation); //qilu 09/11/2016
         void     UpdateNestLocation(); //qilu 09/10/2016
         void  SetNestIdx(size_t idx);
         size_t  GetNestIdx();
+        size_t GetCollectedTagNum();
+        int GetTravelFlag();
+        void SetTravelFlag(int flag);
         
 	private:
+	    CVector2 departLocation;
         CVector2 nestLocation;
         size_t  nest_idx;
         

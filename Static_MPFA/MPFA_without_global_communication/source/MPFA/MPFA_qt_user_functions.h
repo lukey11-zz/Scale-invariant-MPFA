@@ -30,6 +30,7 @@ class MPFA_qt_user_functions : public argos::CQTOpenGLUserFunctions {
 		void DrawFidelity();
 		void DrawPheromones();
 		void DrawTargetRays();
+		void DrawBranches(); 
 
 		MPFA_loop_functions& loopFunctions;
  

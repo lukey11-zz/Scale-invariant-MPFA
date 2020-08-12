@@ -1,4 +1,4 @@
-# Install script for directory: /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication
+# Install script for directory: /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/cmake_install.cmake")
+  include("/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

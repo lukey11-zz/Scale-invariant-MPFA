@@ -46,10 +46,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication
+CMAKE_SOURCE_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build
+CMAKE_BINARY_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build
 
 # Include any dependencies generated for this target.
 include source/MPFA/CMakeFiles/MPFA_loop_functions.dir/depend.make
@@ -62,16 +62,16 @@ include source/MPFA/CMakeFiles/MPFA_loop_functions.dir/flags.make
 
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.o: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/flags.make
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.o: ../source/MPFA/MPFA_loop_functions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.o"
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.o -c /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/source/MPFA/MPFA_loop_functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.o"
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.o -c /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/source/MPFA/MPFA_loop_functions.cpp
 
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.i"
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/source/MPFA/MPFA_loop_functions.cpp > CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.i
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/source/MPFA/MPFA_loop_functions.cpp > CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.i
 
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.s"
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/source/MPFA/MPFA_loop_functions.cpp -o CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.s
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/source/MPFA/MPFA_loop_functions.cpp -o CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.s
 
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.o.requires:
 
@@ -86,16 +86,16 @@ source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.o.provide
 
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/flags.make
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o: ../source/MPFA/MPFA_qt_user_functions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o"
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o -c /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/source/MPFA/MPFA_qt_user_functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o"
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o -c /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/source/MPFA/MPFA_qt_user_functions.cpp
 
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.i"
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/source/MPFA/MPFA_qt_user_functions.cpp > CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.i
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/source/MPFA/MPFA_qt_user_functions.cpp > CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.i
 
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.s"
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/source/MPFA/MPFA_qt_user_functions.cpp -o CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.s
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/source/MPFA/MPFA_qt_user_functions.cpp -o CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.s
 
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o.requires:
 
@@ -108,21 +108,44 @@ source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o.prov
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o.provides.build: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o
 
 
+source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/flags.make
+source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o: source/MPFA/MPFA_loop_functions_automoc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o"
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o -c /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA/MPFA_loop_functions_automoc.cpp
+
+source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.i"
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA/MPFA_loop_functions_automoc.cpp > CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.i
+
+source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.s"
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA/MPFA_loop_functions_automoc.cpp -o CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.s
+
+source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o.requires:
+
+.PHONY : source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o.requires
+
+source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o.provides: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o.requires
+	$(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o.provides.build
+.PHONY : source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o.provides
+
+source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o.provides.build: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o
+
+
 # Object files for target MPFA_loop_functions
 MPFA_loop_functions_OBJECTS = \
 "CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.o" \
-"CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o"
+"CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o" \
+"CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o"
 
 # External object files for target MPFA_loop_functions
 MPFA_loop_functions_EXTERNAL_OBJECTS =
 
 source/MPFA/libMPFA_loop_functions.so: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.o
 source/MPFA/libMPFA_loop_functions.so: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o
+source/MPFA/libMPFA_loop_functions.so: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o
 source/MPFA/libMPFA_loop_functions.so: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make
 source/MPFA/libMPFA_loop_functions.so: source/MPFA/libMPFA_controller.so
-source/MPFA/libMPFA_loop_functions.so: /usr/lib/x86_64-linux-gnu/libQtOpenGL.so
-source/MPFA/libMPFA_loop_functions.so: /usr/lib/x86_64-linux-gnu/libQtGui.so
-source/MPFA/libMPFA_loop_functions.so: /usr/lib/x86_64-linux-gnu/libQtCore.so
 source/MPFA/libMPFA_loop_functions.so: /usr/lib/x86_64-linux-gnu/libglut.so
 source/MPFA/libMPFA_loop_functions.so: /usr/lib/x86_64-linux-gnu/libXmu.so
 source/MPFA/libMPFA_loop_functions.so: /usr/lib/x86_64-linux-gnu/libXi.so
@@ -132,8 +155,8 @@ source/MPFA/libMPFA_loop_functions.so: source/Base/libBaseController.so
 source/MPFA/libMPFA_loop_functions.so: source/Base/libPheromone.so
 source/MPFA/libMPFA_loop_functions.so: source/Base/libNest.so
 source/MPFA/libMPFA_loop_functions.so: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libMPFA_loop_functions.so"
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/MPFA && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MPFA_loop_functions.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libMPFA_loop_functions.so"
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MPFA_loop_functions.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build: source/MPFA/libMPFA_loop_functions.so
@@ -142,14 +165,15 @@ source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build: source/MPFA/libMPFA_loop_f
 
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/requires: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.o.requires
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/requires: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o.requires
+source/MPFA/CMakeFiles/MPFA_loop_functions.dir/requires: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o.requires
 
 .PHONY : source/MPFA/CMakeFiles/MPFA_loop_functions.dir/requires
 
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/clean:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/MPFA && $(CMAKE_COMMAND) -P CMakeFiles/MPFA_loop_functions.dir/cmake_clean.cmake
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA && $(CMAKE_COMMAND) -P CMakeFiles/MPFA_loop_functions.dir/cmake_clean.cmake
 .PHONY : source/MPFA/CMakeFiles/MPFA_loop_functions.dir/clean
 
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/depend:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/source/MPFA /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/MPFA /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/MPFA/CMakeFiles/MPFA_loop_functions.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/source/MPFA /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA/CMakeFiles/MPFA_loop_functions.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : source/MPFA/CMakeFiles/MPFA_loop_functions.dir/depend
 

@@ -14,6 +14,7 @@
 {
     /* required initializations */
 	   nestLocation    = location;
+	   departLocation  = location;
     PheromoneList.clear();
     FidelityList.clear();
     DensityOnFidelity.clear(); //qilu 09/11/2016
@@ -22,6 +23,7 @@
     num_collected_tags=0;
     visited_time_point_in_minute=0;
     nest_idx=-1;
+    travel_flag =0;
 }
 
 /*****
@@ -34,6 +36,9 @@ CVector2 Nest::GetLocation() {
     return nestLocation;
 }
 
+CVector2 Nest::GetDepartLocation() {
+    return departLocation;
+}
 void Nest::SetLocation() {
     nestLocation=CVector2(0.0, 0.0);
 }
@@ -42,6 +47,9 @@ void Nest::SetLocation(CVector2 newLocation) {
     nestLocation = newLocation;
 }
 
+void Nest::SetDepartLocation(CVector2 location){
+	departLocation = location;
+	}
 void Nest:: SetNestIdx(size_t idx){
      nest_idx = idx;
  }
@@ -50,41 +58,27 @@ size_t Nest:: GetNestIdx(){
      return nest_idx;
  } 
 
+size_t Nest:: GetCollectedTagNum(){
+     return num_collected_tags;
+ } 
+ 
+int Nest:: GetTravelFlag(){
+	return travel_flag;
+	}
 
+void Nest:: SetTravelFlag(int flag){
+	travel_flag = flag;
+	}
 void Nest::UpdateNestLocation(){ //qilu 09/10/2016
     CVector2 Sum_locations = CVector2(0.0, 0.0);
     CVector2 placementPosition;
     size_t Num_points = 0;
     CVector2 offset;
 
-    for(size_t i =0; i<PheromoneList.size(); i++){
-//        Sum_locations += PheromoneList[i].GetLocation() * PheromoneList[i].GetResourceDensity();
-//        Num_points += PheromoneList[i].GetResourceDensity();
-        Sum_locations += PheromoneList[i].location * PheromoneList[i].ResourceDensity;
-        Num_points += PheromoneList[i].ResourceDensity;
-        }
-
-    for(map<string, size_t>::iterator it= DensityOnFidelity.begin(); it!=DensityOnFidelity.end(); ++it){
-        Sum_locations += FidelityList[it->first] * it->second;
-        Num_points += it->second;
-    }
-
-    //if (FoodList.size() !=0)
-    /*for (size_t i=0; i<FoodList.size(); i++) {
-        Sum_locations += FoodList[i];
-        Num_points ++;
-    }*/
-    NewLocation = Sum_locations / Num_points;
-    offset = (NewLocation - GetLocation()).Normalize();
-    NewLocation -= offset*0.25;
-     
-    for(size_t i=0; i<PheromoneList.size(); i++){
-        if ((NewLocation-PheromoneList[i].location).SquareLength()<=0.25){
-            NewLocation -= offset*0.25;               
-         } 
-     }
-     if((GetLocation() - NewLocation).SquareLength() < 0.25){
-         NewLocation = GetLocation();//qilu 09/25/2016 Do not update to a new location if the new location is too close to current location
-     }
+      if(num_collected_tags >= 1){ //if full loaded, then travel to the center
+        NewLocation = CVector2(0.0, 0.0);
+        departLocation = nestLocation;
+        travel_flag = 1;
+	 }
 }
         

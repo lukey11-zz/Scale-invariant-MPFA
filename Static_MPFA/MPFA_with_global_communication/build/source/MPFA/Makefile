@@ -51,10 +51,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication
+CMAKE_SOURCE_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build
+CMAKE_BINARY_DIR = /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +83,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/CMakeFiles /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/source/MPFA/CMakeFiles/progress.marks
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/MPFA/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build/CMakeFiles 0
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/CMakeFiles /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/source/MPFA/CMakeFiles/progress.marks
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/MPFA/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/MPFA/clean
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/MPFA/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +100,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/MPFA/preinstall
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/MPFA/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/MPFA/preinstall
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/MPFA/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 source/MPFA/CMakeFiles/MPFA_controller.dir/rule:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/MPFA/CMakeFiles/MPFA_controller.dir/rule
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/MPFA/CMakeFiles/MPFA_controller.dir/rule
 .PHONY : source/MPFA/CMakeFiles/MPFA_controller.dir/rule
 
 # Convenience name for target.
@@ -125,12 +125,12 @@ MPFA_controller: source/MPFA/CMakeFiles/MPFA_controller.dir/rule
 
 # fast build rule for target.
 MPFA_controller/fast:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/build
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/build
 .PHONY : MPFA_controller/fast
 
 # Convenience name for target.
 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/rule:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/rule
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/MPFA/CMakeFiles/MPFA_loop_functions.dir/rule
 .PHONY : source/MPFA/CMakeFiles/MPFA_loop_functions.dir/rule
 
 # Convenience name for target.
@@ -140,8 +140,38 @@ MPFA_loop_functions: source/MPFA/CMakeFiles/MPFA_loop_functions.dir/rule
 
 # fast build rule for target.
 MPFA_loop_functions/fast:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build
 .PHONY : MPFA_loop_functions/fast
+
+# Convenience name for target.
+source/MPFA/CMakeFiles/MPFA_controller_automoc.dir/rule:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/MPFA/CMakeFiles/MPFA_controller_automoc.dir/rule
+.PHONY : source/MPFA/CMakeFiles/MPFA_controller_automoc.dir/rule
+
+# Convenience name for target.
+MPFA_controller_automoc: source/MPFA/CMakeFiles/MPFA_controller_automoc.dir/rule
+
+.PHONY : MPFA_controller_automoc
+
+# fast build rule for target.
+MPFA_controller_automoc/fast:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller_automoc.dir/build.make source/MPFA/CMakeFiles/MPFA_controller_automoc.dir/build
+.PHONY : MPFA_controller_automoc/fast
+
+# Convenience name for target.
+source/MPFA/CMakeFiles/MPFA_loop_functions_automoc.dir/rule:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f CMakeFiles/Makefile2 source/MPFA/CMakeFiles/MPFA_loop_functions_automoc.dir/rule
+.PHONY : source/MPFA/CMakeFiles/MPFA_loop_functions_automoc.dir/rule
+
+# Convenience name for target.
+MPFA_loop_functions_automoc: source/MPFA/CMakeFiles/MPFA_loop_functions_automoc.dir/rule
+
+.PHONY : MPFA_loop_functions_automoc
+
+# fast build rule for target.
+MPFA_loop_functions_automoc/fast:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions_automoc.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions_automoc.dir/build
+.PHONY : MPFA_loop_functions_automoc/fast
 
 MPFA_controller.o: MPFA_controller.cpp.o
 
@@ -149,7 +179,7 @@ MPFA_controller.o: MPFA_controller.cpp.o
 
 # target to build an object file
 MPFA_controller.cpp.o:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_controller.cpp.o
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_controller.cpp.o
 .PHONY : MPFA_controller.cpp.o
 
 MPFA_controller.i: MPFA_controller.cpp.i
@@ -158,7 +188,7 @@ MPFA_controller.i: MPFA_controller.cpp.i
 
 # target to preprocess a source file
 MPFA_controller.cpp.i:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_controller.cpp.i
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_controller.cpp.i
 .PHONY : MPFA_controller.cpp.i
 
 MPFA_controller.s: MPFA_controller.cpp.s
@@ -167,8 +197,35 @@ MPFA_controller.s: MPFA_controller.cpp.s
 
 # target to generate assembly for a file
 MPFA_controller.cpp.s:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_controller.cpp.s
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_controller.cpp.s
 .PHONY : MPFA_controller.cpp.s
+
+MPFA_controller_automoc.o: MPFA_controller_automoc.cpp.o
+
+.PHONY : MPFA_controller_automoc.o
+
+# target to build an object file
+MPFA_controller_automoc.cpp.o:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_controller_automoc.cpp.o
+.PHONY : MPFA_controller_automoc.cpp.o
+
+MPFA_controller_automoc.i: MPFA_controller_automoc.cpp.i
+
+.PHONY : MPFA_controller_automoc.i
+
+# target to preprocess a source file
+MPFA_controller_automoc.cpp.i:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_controller_automoc.cpp.i
+.PHONY : MPFA_controller_automoc.cpp.i
+
+MPFA_controller_automoc.s: MPFA_controller_automoc.cpp.s
+
+.PHONY : MPFA_controller_automoc.s
+
+# target to generate assembly for a file
+MPFA_controller_automoc.cpp.s:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_controller_automoc.cpp.s
+.PHONY : MPFA_controller_automoc.cpp.s
 
 MPFA_loop_functions.o: MPFA_loop_functions.cpp.o
 
@@ -176,8 +233,8 @@ MPFA_loop_functions.o: MPFA_loop_functions.cpp.o
 
 # target to build an object file
 MPFA_loop_functions.cpp.o:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_loop_functions.cpp.o
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.o
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_loop_functions.cpp.o
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.o
 .PHONY : MPFA_loop_functions.cpp.o
 
 MPFA_loop_functions.i: MPFA_loop_functions.cpp.i
@@ -186,8 +243,8 @@ MPFA_loop_functions.i: MPFA_loop_functions.cpp.i
 
 # target to preprocess a source file
 MPFA_loop_functions.cpp.i:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_loop_functions.cpp.i
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.i
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_loop_functions.cpp.i
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.i
 .PHONY : MPFA_loop_functions.cpp.i
 
 MPFA_loop_functions.s: MPFA_loop_functions.cpp.s
@@ -196,9 +253,36 @@ MPFA_loop_functions.s: MPFA_loop_functions.cpp.s
 
 # target to generate assembly for a file
 MPFA_loop_functions.cpp.s:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_loop_functions.cpp.s
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.s
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_controller.dir/build.make source/MPFA/CMakeFiles/MPFA_controller.dir/MPFA_loop_functions.cpp.s
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions.cpp.s
 .PHONY : MPFA_loop_functions.cpp.s
+
+MPFA_loop_functions_automoc.o: MPFA_loop_functions_automoc.cpp.o
+
+.PHONY : MPFA_loop_functions_automoc.o
+
+# target to build an object file
+MPFA_loop_functions_automoc.cpp.o:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.o
+.PHONY : MPFA_loop_functions_automoc.cpp.o
+
+MPFA_loop_functions_automoc.i: MPFA_loop_functions_automoc.cpp.i
+
+.PHONY : MPFA_loop_functions_automoc.i
+
+# target to preprocess a source file
+MPFA_loop_functions_automoc.cpp.i:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.i
+.PHONY : MPFA_loop_functions_automoc.cpp.i
+
+MPFA_loop_functions_automoc.s: MPFA_loop_functions_automoc.cpp.s
+
+.PHONY : MPFA_loop_functions_automoc.s
+
+# target to generate assembly for a file
+MPFA_loop_functions_automoc.cpp.s:
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_loop_functions_automoc.cpp.s
+.PHONY : MPFA_loop_functions_automoc.cpp.s
 
 MPFA_qt_user_functions.o: MPFA_qt_user_functions.cpp.o
 
@@ -206,7 +290,7 @@ MPFA_qt_user_functions.o: MPFA_qt_user_functions.cpp.o
 
 # target to build an object file
 MPFA_qt_user_functions.cpp.o:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.o
 .PHONY : MPFA_qt_user_functions.cpp.o
 
 MPFA_qt_user_functions.i: MPFA_qt_user_functions.cpp.i
@@ -215,7 +299,7 @@ MPFA_qt_user_functions.i: MPFA_qt_user_functions.cpp.i
 
 # target to preprocess a source file
 MPFA_qt_user_functions.cpp.i:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.i
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.i
 .PHONY : MPFA_qt_user_functions.cpp.i
 
 MPFA_qt_user_functions.s: MPFA_qt_user_functions.cpp.s
@@ -224,7 +308,7 @@ MPFA_qt_user_functions.s: MPFA_qt_user_functions.cpp.s
 
 # target to generate assembly for a file
 MPFA_qt_user_functions.cpp.s:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.s
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(MAKE) -f source/MPFA/CMakeFiles/MPFA_loop_functions.dir/build.make source/MPFA/CMakeFiles/MPFA_loop_functions.dir/MPFA_qt_user_functions.cpp.s
 .PHONY : MPFA_qt_user_functions.cpp.s
 
 # Help Target
@@ -237,12 +321,20 @@ help:
 	@echo "... edit_cache"
 	@echo "... MPFA_controller"
 	@echo "... MPFA_loop_functions"
+	@echo "... MPFA_controller_automoc"
+	@echo "... MPFA_loop_functions_automoc"
 	@echo "... MPFA_controller.o"
 	@echo "... MPFA_controller.i"
 	@echo "... MPFA_controller.s"
+	@echo "... MPFA_controller_automoc.o"
+	@echo "... MPFA_controller_automoc.i"
+	@echo "... MPFA_controller_automoc.s"
 	@echo "... MPFA_loop_functions.o"
 	@echo "... MPFA_loop_functions.i"
 	@echo "... MPFA_loop_functions.s"
+	@echo "... MPFA_loop_functions_automoc.o"
+	@echo "... MPFA_loop_functions_automoc.i"
+	@echo "... MPFA_loop_functions_automoc.s"
 	@echo "... MPFA_qt_user_functions.o"
 	@echo "... MPFA_qt_user_functions.i"
 	@echo "... MPFA_qt_user_functions.s"
@@ -257,6 +349,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/lukey15/Research/MPFA_repo/Scale-invariant-MPFA/Static_MPFA/MPFA_with_global_communication/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

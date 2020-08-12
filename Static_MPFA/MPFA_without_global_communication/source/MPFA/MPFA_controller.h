@@ -5,6 +5,8 @@
 #include <source/Base/Pheromone.h>
 #include <source/Base/Nest.h> //qilu 09/06
 #include <source/MPFA/MPFA_loop_functions.h>
+/* Definition of the LEDs actuator */
+#include <argos3/plugins/robots/generic/control_interface/ci_leds_actuator.h>
 
 using namespace std;
 using namespace argos;
@@ -40,7 +42,7 @@ class MPFA_controller : public BaseController {
   //void        AddSearchingTime(size_t remainderTime);//qilu 09/26/2016
   size_t      startTime;//qilu 09/26/2016
         
-
+  
 	private:
   Nest* ClosestNest; //qilu 07/26/2016
   string 			controllerID;//qilu 07/26/2016
@@ -78,7 +80,8 @@ class MPFA_controller : public BaseController {
 			DEPARTING = 0,
 			SEARCHING = 1,
 			RETURNING = 2,
-			SURVEYING = 3
+			SURVEYING = 3,
+			DELIVERYING = 4,
 		} MPFA_state;
 
 		/* iAnt MPFA state functions */
@@ -87,6 +90,7 @@ class MPFA_controller : public BaseController {
 		void Searching();
 		void Returning();
 		void Surveying();
+		void Deliverying();
 
 		/* MPFA helper functions */
 		void SetRandomSearchLocation();
@@ -109,6 +113,9 @@ class MPFA_controller : public BaseController {
 		bool isUsingPheromone;
 
 		unsigned int survey_count;
+		/* Pointer to the LEDs actuator */
+        CCI_LEDsActuator* m_pcLEDs;
+   
 };
 
 #endif /* MPFA_CONTROLLER_H */
